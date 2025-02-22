@@ -11,6 +11,6 @@ uses your microphone to look for specific words **in real time** and runs a func
 ## technical details for nerds
 This is how it generally works:
 1. we use [python-sounddevice](https://github.com/spatialaudio/python-sounddevice) in order to get real-time audio from the user's microphone
-2. then we pipe the data over to [vosk](https://github.com/alphacep/vosk-api) in order to do ASR and transcribe the audio
+2. then we pipe the data over to [vosk](https://github.com/alphacep/vosk-api) to perform ASR and transcribe the audio
 3. as the audio is transcribed, the script checks the wordlist for matches in its wordlist
 4. if there is a match, a function is run
